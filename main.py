@@ -15,7 +15,6 @@ from src.visualization import plot_performance, plot_interactive
 from config import TICKERS, START_DATE, END_DATE
 
 # --- Step 1: Load and clean ---
-# --- Step 1: Load and clean ---
 close_prices = {}
 high_prices  = {}
 low_prices   = {}
@@ -42,6 +41,7 @@ rolling_vol = compute_rolling_vol(returns)
 # --- Step 3: Visualize ---
 plot_performance(cum_returns, rolling_vol)
 plot_interactive(cum_returns)
+
 print('Pipeline complete.')
 
 # --- Step 4: Summary stats ---
