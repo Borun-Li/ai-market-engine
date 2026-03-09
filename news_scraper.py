@@ -59,7 +59,7 @@ def fetch_feed(name: str, url: str) -> list[dict]:
             'link': entry.get('link', ''),
             'date': entry.get('published', ''),
             'source': name,
-            # 'summary': summary[:300]
+            'summary': summary[:300]
         })
 
     return articles
